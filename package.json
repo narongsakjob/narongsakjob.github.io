@@ -5,8 +5,12 @@
   "dependencies": {
     "bootstrap": "4.0.0-alpha.6",
     "font-awesome": "^4.7.0",
+    "i18next": "^10.2.2",
+    "i18next-browser-languagedetector": "^2.1.0",
+    "i18next-xhr-backend": "^1.5.1",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
+    "react-i18next": "^7.3.1",
     "react-scripts": "1.1.0"
   },
   "scripts": {
