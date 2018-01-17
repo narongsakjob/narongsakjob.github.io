@@ -18,15 +18,13 @@ class App extends Component {
 
     return (
       <div id="App">
-        <button onClick={() => changeLanguage('de')}>de</button>
+        <Header />
         <button onClick={() => changeLanguage('en')}>en</button>
-        <div className="App-intro">
-          <Trans i18nKey="description.part1">
-            To get started, edit <code>src/App.js</code> and save to reload.
-          </Trans>
-        </div>
-          <div>{t('description.part2')}</div>
-        </div>
+        <button onClick={() => changeLanguage('th')}>th</button>
+        <div>{t('title')}</div>
+        <Body />
+        <Footer />
+      </div>
     )
   }
 }
