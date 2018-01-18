@@ -1,5 +1,8 @@
 import React from 'react'
-const Footer = () => (
-	<div>Hello world footer</div>
+const Footer = props => (
+	<div>
+		{props.t('title')} footer
+	</div>
+	
 )
 export default Footer

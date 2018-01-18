@@ -7,6 +7,9 @@ import { translate, Trans } from 'react-i18next'
 import Header from './components/header'
 import Body from './components/body'
 import Footer from './components/footer'
+import Burger from './sections/burger'
+
+import './App.css';
 
 class App extends Component {
   render() {
@@ -18,12 +21,12 @@ class App extends Component {
 
     return (
       <div id="App">
-        <Header />
+        <Burger />
+        <Header t={t} />
         <button onClick={() => changeLanguage('en')}>en</button>
         <button onClick={() => changeLanguage('th')}>th</button>
-        <div>{t('title')}</div>
-        <Body />
-        <Footer />
+        <Body t={t} />
+        <Footer t={t} />
       </div>
     )
   }

@@ -1,8 +1,16 @@
 import React from 'react'
-const Body = () => (
-	<div>Hello Body
-		<div href="#" className="btn btn-danger">asd</div>
-		<i class="fa fa-heartbeat" aria-hidden="true"></i>
-	</div>
-)
-export default Body
+
+export default class Body extends React.Component {
+	render() {
+		console.log(this.props)
+		const { t } = this.props
+		return (
+			<div>
+        <div>{t('title')} Body</div>
+				<div href="#" className="btn btn-danger">asd</div>
+				<i className="fa fa-heartbeat" aria-hidden="true"></i>
+			</div>
+		);
+	}
+}
+

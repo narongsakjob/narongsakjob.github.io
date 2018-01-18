@@ -1,5 +1,5 @@
 import React from 'react'
-const Header = () => (
-	<div>Hello world header</div>
+const Header = props => (
+	<div>{props.t('title')} header</div>
 )
 export default Header
