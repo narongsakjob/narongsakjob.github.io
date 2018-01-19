@@ -2,12 +2,12 @@ import React from 'react'
 import styled from 'styled-components'
 
 const Container = styled.div`
-	position: fixed;
-	bottom: 0%;
+	background-color: lightgrey;
+	padding: 10%;
 `
 
 const Footer = props => (
-	<Container>
+	<Container className="container-fluid">
 		{props.t('title')} footer
 	</Container>
 	
