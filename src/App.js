@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 
 //i18n
-import { translate, Trans } from 'react-i18next'
+import { translate } from 'react-i18next'
 
 //Components
 import Header from './components/header'
@@ -12,11 +12,7 @@ import './App.css';
 
 class App extends Component {
   render() {
-    const { t, i18n } = this.props;
-
-    const changeLanguage = (lng) => {
-      i18n.changeLanguage(lng);
-    }
+    const { t } = this.props;
 
     return (
       <div id="App">
