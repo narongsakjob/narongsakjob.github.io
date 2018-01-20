@@ -2,7 +2,10 @@
   "title": "Hello",
   "about": {
     "title": "Welcome to my portfolio",
-    "first_name": "Narongsak",
+    "first_name": {
+      "": "Name",
+      "": ""
+    },
     "last_name": "Chobsri",
     "nickname": "Job",
     "age": "20",
