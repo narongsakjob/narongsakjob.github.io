@@ -6,12 +6,17 @@ const Container = styled.div`
 	padding: 10%;
 	text-align: center;
 `
+const Profile = [
+	<img src=""/>
+]
+
 
 export default class About extends React.Component {
 	render() {
+		const { t } = this.props
 		return (
 			<Container className="container-fluid">
-				<div>asd</div>
+				{ Profile }
 			</Container>
 		)
 	}

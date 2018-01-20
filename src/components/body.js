@@ -5,7 +5,6 @@ import About from '../sections/body/about'
 import Project from '../sections/body/project'
 
 const Container = styled.div`
-	top: 120px;
 `
 
 export default class Body extends React.Component {
@@ -14,7 +13,7 @@ export default class Body extends React.Component {
 		const { t } = this.props
 		return (
 			<Container>
-        <About />
+        <About t={t} />
 				<Project />
 			</Container>
 		)
