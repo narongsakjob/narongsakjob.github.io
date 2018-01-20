@@ -17,19 +17,31 @@ const Image = styled.img`
 `
 
 export default class About extends React.Component {
-	
-	render() {
 
-		const { t } = this.props
-	
+	constructor(props) {
+		super(props)
+		this.Profile = this.Profile.bind(this)
+	}
+
+	Profile() {
+		let { t } = this.props
+		let image_url = require("../../assets/images/me.jpg")
 		return (
-			<Container className="container-fluid">
-				<Image src={ require("../../assets/images/me.jpg") }  className="rounded-circle img-fluid" key="image"/><br/>
+			<div>
+				<Image src={ image_url }  className="rounded-circle img-fluid" key="image"/><br/>
 				<div><label>Name : </label> { t('about.first_name') } { t('about.last_name') }</div>
 				<div><label>Nickname : </label> { t('about.nickname') }</div>
 				<div><label>Birthdate : </label> { t('about.birthdate') } <label>Age : </label> { t('about.age') } years old</div>
 				<div><label>Nationality : </label> { t('about.nationality') }</div>
 				<div><label>Education : </label> { t('about.education') } <label> Bachelor in </label> { t('about.major') }</div>
+			</div>
+		)
+	}
+	
+	render() {
+		return (
+			<Container className="container-fluid">
+				{this.Profile()}
 			</Container>
 		)
 	}
