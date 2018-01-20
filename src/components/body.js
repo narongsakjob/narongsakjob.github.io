@@ -5,6 +5,7 @@ import About from '../sections/body/about'
 import Project from '../sections/body/project'
 
 const Container = styled.div`
+	
 `
 
 export default class Body extends React.Component {
