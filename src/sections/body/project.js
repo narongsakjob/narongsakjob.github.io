@@ -8,7 +8,7 @@ const Container = styled.div`
 var table = []
 for (let j = 0; j < 5; j++) {
 	table.push(
-		<Container style={{ backgroundColor: `${ j%2==0 ? '': '#f3f3f3'}` }} key={j}>
+		<Container style={{ backgroundColor: `${ j%2===0 ? '': '#f3f3f3'}` }} key={j}>
 			<div className="container">asdas</div>
 		</Container>
 	)
