@@ -29,7 +29,7 @@ export default class About extends React.Component {
 		return (
 			<div>
 				<Image src={ image_url }  className="rounded-circle img-fluid" key="image"/><br/>
-				<div><label>{ t('about.first_name.label') } : </label> { t('about.first_name.value') } { t('about.last_name') }</div>
+				<div><label>{ t('about.first_name.label') } : </label> { t('about.first_name.value') } { t('about.last_name.value') }</div>
 				<div><label>{ t('about.nickname.label') } : </label> { t('about.nickname.value') }</div>
 				<div><label>{ t('about.birthdate.label') } : </label> { t('about.birthdate.value') } <label>{ t('about.age.label') } : </label> { t('about.age.value') } { t('about.age.unit') }</div>
 				<div><label>{ t('about.nationality.label') } : </label> { t('about.nationality.value') }</div>
