@@ -3,16 +3,37 @@
   "about": {
     "title": "Welcome to my portfolio",
     "first_name": {
-      "": "Name",
-      "": ""
+      "label": "Name",
+      "value": "Narongsak"
     },
-    "last_name": "Chobsri",
-    "nickname": "Job",
-    "age": "20",
-    "birthdate": "30 july 1997",
-    "nationality": "Thai",
-    "education": "Kasetsart University IUP program",
-    "major": "Software and Knowledge Engineering",
+    "last_name": {
+      "value": "Chobsri"
+    },
+    "nickname": {
+      "label": "Nickname",
+      "value": "Job"
+    },
+    "age": {
+      "label": "Age",
+      "value": "20",
+      "unit": "years old"
+    },
+    "birthdate": {
+      "label": "Birth Date",
+      "value": "30 july 1997"
+    },
+    "nationality": {
+      "label": "Nationality",
+      "value": "Thai"
+    },
+    "education": {
+      "label": "Education",
+      "value": "Kasetsart University IUP program"
+    },
+    "major": {
+      "label": "Bachelor in",
+      "value": "Software and Knowledge Engineering"
+    },
     "desciption": ""
   }
 }
