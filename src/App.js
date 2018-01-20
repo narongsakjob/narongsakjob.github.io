@@ -12,11 +12,11 @@ import './App.css';
 
 class App extends Component {
   render() {
-    const { t } = this.props;
+    const { t, i18n } = this.props;
 
     return (
       <div id="App">
-        <Header t={t} />
+        <Header t={t} i18n={i18n} />
         <Body t={t} />
         <Footer t={t} />
       </div>

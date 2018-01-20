@@ -16,11 +16,11 @@ const Header = props => (
 		<Container className="row fixed-top hidden-md-down">
 			<Burger />
 			<Middle />
-			<Change />
+			<Change i18n={props.i18n} />
 		</Container>
 		<Container className="row hidden-lg-up">
 			<Burger />
-			<Change />
+			<Change i18n={props.i18n}/>
 		</Container>
 	</div>
 

@@ -25,10 +25,17 @@ const Image = styled.img`
 
 export default class Change extends React.Component {
 	render() {
+		
+		let { i18n } = this.props
+
+		const changeLanguage = (lng) => {
+      i18n.changeLanguage(lng);
+    }
+
 		return(
 			<Container>
-				<Button><Image src={ require("../../assets/images/th.png") } alt='' /></Button>
-				<Button><Image src={ require("../../assets/images/en.png") } alt='' /></Button>
+				<Button onClick={() => changeLanguage('th')}><Image src={ require("../../assets/images/th.png") } alt='' /></Button>
+				<Button onClick={() => changeLanguage('en')}><Image src={ require("../../assets/images/en.png") } alt='' /></Button>
 			</Container>
 		)
 	}
