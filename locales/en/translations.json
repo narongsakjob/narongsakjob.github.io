@@ -1,3 +1,15 @@
 {
-  "title": "Hello"
+  "title": "Hello",
+  "about": {
+    "title": "Welcome to my portfolio",
+    "first_name": "Narongsak",
+    "last_name": "Chobsri",
+    "nickname": "Job",
+    "age": "20",
+    "birthdate": "30 july 1997",
+    "nationality": "Thai",
+    "education": "Kasetsart University IUP program",
+    "major": "Software and Knowledge Engineering",
+    "desciption": ""
+  }
 }
