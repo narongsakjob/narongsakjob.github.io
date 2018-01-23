@@ -1,8 +1,8 @@
 {
   "main.css": "static/css/main.906098fa.css",
   "main.css.map": "static/css/main.906098fa.css.map",
-  "main.js": "static/js/main.d5485ad1.js",
-  "main.js.map": "static/js/main.d5485ad1.js.map",
+  "main.js": "static/js/main.574a9d39.js",
+  "main.js.map": "static/js/main.574a9d39.js.map",
   "static/media/en.png": "static/media/en.455440a3.png",
   "static/media/fontawesome-webfont.eot": "static/media/fontawesome-webfont.674f50d2.eot",
   "static/media/fontawesome-webfont.svg?v=4.7.0": "static/media/fontawesome-webfont.912ec66d.svg",
@@ -10,5 +10,6 @@
   "static/media/fontawesome-webfont.woff2?v=4.7.0": "static/media/fontawesome-webfont.af7ae505.woff2",
   "static/media/fontawesome-webfont.woff?v=4.7.0": "static/media/fontawesome-webfont.fee66e71.woff",
   "static/media/me.jpg": "static/media/me.7018a3f2.jpg",
-  "static/media/th.png": "static/media/th.429145ae.png"
+  "static/media/th.png": "static/media/th.429145ae.png",
+  "static/media/wallet_1.png": "static/media/wallet_1.7226e0d6.png"
 }
