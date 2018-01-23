@@ -16,15 +16,33 @@ export default class Project extends React.Component {
 		for (let j = 0; j < 5; j++) {
 			table.push(
 				<Container style={{ backgroundColor: `${ j%2===0 ? '': '#f3f3f3'}` }} key={j}>
-					<div className="container row">
-						<div class="col-md-6">
-							<h2>Heading</h2>
-							<p>Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec ullamcorper nulla non metus auctor fringilla.</p>
-						</div>
-						<div class="col-md-6">
-							<Image src={ require("../../assets/images/projects/wallet_1.png") } />
-						</div>
-					</div>
+						{ (() => {
+							if(j%2===0) {
+								return (
+								<div className="container row">
+									<div class="col-md-6">
+										<h2>Heading</h2>
+										<p>Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec ullamcorper nulla non metus auctor fringilla.</p>
+									</div>
+									<div class="col-md-6">
+										<Image src={ require("../../assets/images/projects/wallet_1.png") } />
+									</div>
+								</div>
+								)
+							} else {
+								return (
+									<div className="container row">
+										<div class="col-md-6">
+											<Image src={ require("../../assets/images/projects/wallet_1.png") } />
+										</div>
+										<div class="col-md-6">
+											<h2>Heading</h2>
+											<p>Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec ullamcorper nulla non metus auctor fringilla.</p>
+										</div>
+									</div>
+								)
+							}
+						})()}						
 				</Container>
 			)
 		}
