@@ -44,11 +44,10 @@ export default class Project extends React.Component {
 					{(() => {
 						var images = []
 						for(var i = 0; i < img_projects[index].length; i++) {
-							console.log(img_projects[index][i])
-							var x = img_projects[index][i]
-							let img_url;
+							var name = img_projects[index][i]
+							let img_url = require(`../../assets/images/projects/${name}.png`);
 							images.push(
-								<Image src={ require(`../../assets/images/projects/${x}.png`) } />								
+								<Image src={ img_url } key={i}/>								
 							)
 						}
 						return images
