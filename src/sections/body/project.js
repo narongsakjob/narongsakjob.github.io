@@ -2,6 +2,8 @@ import React from 'react'
 import styled from 'styled-components'
 import Slider from 'react-slick'
 
+import img_projects from '../../assets/data'
+
 const Container = styled.div`
 	padding: 10%;
 `
@@ -21,8 +23,8 @@ export default class Project extends React.Component {
 	getData(index) {
 		let { t } = this.props 
 		return(
-			<div class="col-md-6">
-				<h2 class="text-center">{ t(`projects.${index}.name`) }</h2>
+			<div className="col-md-6">
+				<h2 className="text-center">{ t(`projects.${index}.name`) }</h2>
 				<p>{ t(`projects.${index}.description`) }.</p>
 			</div>
 		)
@@ -35,12 +37,22 @@ export default class Project extends React.Component {
       speed: 400,
       slidesToShow: 1,
       slidesToScroll: 1,
-    };
+		};
 		return(
-			<div class="col-md-6 text-center">
-				<Slider {...settings} class="text-center">
-        	<Image src={ require("../../assets/images/projects/wallet_1.png") } />
-        	<Image src={ require("../../assets/images/projects/wallet_2.png") } />
+			<div className="col-md-6 text-center">
+				<Slider {...settings} className="text-center">
+					{(() => {
+						var images = []
+						for(var i = 0; i < img_projects[index].length; i++) {
+							console.log(img_projects[index][i])
+							var x = img_projects[index][i]
+							let img_url;
+							images.push(
+								<Image src={ require(`../../assets/images/projects/${x}.png`) } />								
+							)
+						}
+						return images
+					})()}
         </Slider>
 			</div>
 		)
