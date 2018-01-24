@@ -35,5 +35,84 @@
       "value": "Software and Knowledge Engineering"
     },
     "desciption": ""
-  }
+  },
+  "projects": [
+    {
+      "name": "Shoot A Ghost",
+      "github": "https://github.com/narongsakjob/shoot-a-ghost",
+      "description": "นี่คือโปรเจคจบวิชา individual software development process เป็นเกมส์ยิงผีเก็บคะแนนผู้เล่นต้องยิงและหลบกระสุนของผีที่ออกมาก่อนผีจะเข้าไปในวาร์ป",
+      "server": "no",
+      "wiki": "no"
+    },
+    {
+      "name": "Tic Tac Toe",
+      "github": "https://github.com/narongsakjob/tic-toc-toe-game",
+      "description": "นี่คือmidterm project วิชา Software Specification & Design เป็นเกมส์กาเครื่องหมาย x หรือ o ในตารางขนาด 3x3 สำหรับผู้เล่น 2 คน เกมส์จะชนะเมื่อผู้เล่นสามารถกาเครื่องหมายในแนวตั้ง แนวนอนหรือแนวทแยงได้ครบ",
+      "server": "no",
+      "wiki": "no"
+    },
+    {
+      "name": "Pokemon Valley Ball",
+      "github": "https://github.com/Facelespedia/pokemon-volleyball",
+      "description": "นี่คือโปรเจคจบวิชา software specification & design เป็นเกมส์ valley ball สำหรับเล่น 2 คนใครทำบอลตกพื้นอีกฝั่งได้จะได้แต้มถ้าใครแต้มถึง 10 ก่อนจะชนะ",
+      "server": "no",
+      "wiki": "no"
+    },
+    {
+      "name": "Wallet App",
+      "github": "https://github.com/Facelespedia/WalletApp",
+      "description": "นี่เป็นโปรเจคจบวิชา software specification & design เป็นแอนดรอยแอพริเคชั่นที่ไว้ใช้สำครับบันทึกรายรับรายจ่ายเงินคงเหลือของเรา",
+      "server": "no",
+      "wiki": "no"
+    },
+    {
+      "name": "Incident Software",
+      "github": "https://github.com/narongsakjob/infudent-software",
+      "description": "เว็บไซต์ทำงานร่วมกับฮาร์ดแวร์แสดงปริมาณน้ำที่เหลืออยู่ในสวน และในเวลาจริงเส้นกราฟของความชื้นในดินและความหนาแน่นของแสง อุณหภูมิจะแสดงในแบบเรียลไทม์ นอกจากนี้คุณยังสามารถตั้งเวลาถ่ายน้ำในสวน",
+      "server": "no",
+      "wiki": "http://exceed.cpe.ku.ac.th/wiki/index.php/Exceed_13_External"
+    },
+    {
+      "name": "What The Fast",
+      "github": "https://github.com/Facelespedia/speed-test",
+      "description": "นี่คือโปรเจควิชา Data Comunication Skill เว็บไซต์ไว้เช็คความเร็วของอินเทอร์เน็ตแสดงผล ping, ip address, download, upload, และ server ที่ใช้เช็คด้วย",
+      "server": "no",
+      "wiki": "no"
+    },
+    {
+      "name": "Facelespedia",
+      "github": "https://github.com/Facelespedia/Facelespedia",
+      "description": "นี่คือโปรเจคจบ วิชา database เป็นเวปไซต์แสดงข้อมูลสถิติต่างๆทั้ง ทีม ผู้เล่น และฮีโร่ ของเกมส์ data2",
+      "server": "no",
+      "wiki": "no"
+    },
+    {
+      "name": "exceed vote frontend",
+      "github": "https://github.com/exceed-vote/vote-frontend",
+      "description": "เป็นหน้าเว็ปไว้สำหรับโหวดคะแนนโปรเจคของค่าย exceed 14",
+      "server": "no",
+      "wiki": "no"
+    },
+    {
+      "name": "Medicon App (Cycle1)",
+      "github": "no",
+      "description": "เป็นเว็บไซต์สำหรับการให้คำปรึกษาแนะนำการรักษาสำหรับผู้ที่คิดว่ามีปัญหาต้องการปรึกษากับจิตแพทย์",
+      "server": "no",
+      "wiki": "no"
+    },
+    {
+      "name": "Getkaset (Cycle1)",
+      "github": "no",
+      "description": "เป็นเว็บไซต์ e-commerce ขายสินค้าต่างๆทางการเกษตรมีส่วนของกระทู้ถาม-ตอบ บทความ และมีระบบสมาชิก ระบบซื้อขาย และส่วนของคนจัดการสินค้าต่างๆ",
+      "server": "no",
+      "wiki": "no"
+    },
+    {
+      "name": "Coup Web",
+      "github": "https://github.com/Coupdeg/coup-web",
+      "description": "เป็นโปรเจคจบวิชา workgroup software development process เป็นเว็ป e-commerce ขายเสื้อผ้าเครื่องประดับของต่างๆผู้หญิงที่มีระบบสมาชิก ระบบซื้อขายต่างๆและส่วนของผู้ดูแลระบบ",
+      "server": "http://coup-deg.herokuapp.com",
+      "wiki": "no"
+    }
+  ]
 }
