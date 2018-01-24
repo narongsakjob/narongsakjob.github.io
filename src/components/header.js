@@ -18,7 +18,7 @@ const Header = props => (
 			<Middle />
 			<Change i18n={props.i18n} />
 		</Container>
-		<Container className="row hidden-lg-up">
+		<Container className="hidden-lg-up">
 			<Burger />
 			<Change i18n={props.i18n}/>
 		</Container>
