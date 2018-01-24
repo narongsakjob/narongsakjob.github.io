@@ -15,7 +15,7 @@ export default class Body extends React.Component {
 		return (
 			<Container>
         <About t={t} />
-				<Project />
+				<Project t={t} />
 			</Container>
 		)
 	}

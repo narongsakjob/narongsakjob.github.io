@@ -11,12 +11,18 @@ const Image = styled.img`
 
 export default class Project extends React.Component {
 
-	table() {
-		var table = []
+	constructor(props) {
+		super(props)
+		this.Table = this.Table.bind(this)
+	}
+
+	Table() {
+		let { t } = this.props 
+		let table = []
 		for (let j = 0; j < 5; j++) {
 			table.push(
 				<Container style={{ backgroundColor: `${ j%2===0 ? '': '#f3f3f3'}` }} key={j}>
-						{ (() => {
+						{/* { (() => {
 							if(j%2===0) {
 								return (
 								<div className="container row">
@@ -42,7 +48,8 @@ export default class Project extends React.Component {
 									</div>
 								)
 							}
-						})()}						
+						})()}						 */}
+					{ t('') }
 				</Container>
 			)
 		}
@@ -51,7 +58,7 @@ export default class Project extends React.Component {
 
 	render() {
 		return (
-			this.table()
+			this.Table()
 		)
 	}
 }
