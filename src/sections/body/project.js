@@ -13,43 +13,38 @@ export default class Project extends React.Component {
 
 	constructor(props) {
 		super(props)
-		this.Table = this.Table.bind(this)
+		this.getData = this.getData.bind(this)
 	}
 
-	Table() {
+	getData(index) {
 		let { t } = this.props 
+		return(
+			<div class="col-md-6">
+				<h2>{ t(`projects.${index}.name`) }</h2>
+				<p>{ t(`projects.${index}.description`) }.</p>
+			</div>
+		)
+	}
+
+	getImage() {
+		return(
+			<div class="col-md-6">
+				<Image src={ require("../../assets/images/projects/wallet_1.png") } />
+			</div>
+		)
+	}
+	
+
+	getTable() {
 		let table = []
-		for (let j = 0; j < 5; j++) {
+		let size = 11
+		for (let j = 0; j < size ; j++) {
 			table.push(
 				<Container style={{ backgroundColor: `${ j%2===0 ? '': '#f3f3f3'}` }} key={j}>
-						{/* { (() => {
-							if(j%2===0) {
-								return (
-								<div className="container row">
-									<div class="col-md-6">
-										<h2>Heading</h2>
-										<p>Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec ullamcorper nulla non metus auctor fringilla.</p>
-									</div>
-									<div class="col-md-6">
-										<Image src={ require("../../assets/images/projects/wallet_1.png") } />
-									</div>
-								</div>
-								)
-							} else {
-								return (
-									<div className="container row">
-										<div class="col-md-6">
-											<Image src={ require("../../assets/images/projects/wallet_1.png") } />
-										</div>
-										<div class="col-md-6">
-											<h2>Heading</h2>
-											<p>Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec ullamcorper nulla non metus auctor fringilla.</p>
-										</div>
-									</div>
-								)
-							}
-						})()}						 */}
-					{ t('') }
+					<div className="container row">
+						{ j%2 === 0 ? this.getData(j) : this.getImage() }
+						{ j%2 !== 0 ? this.getData(j) : this.getImage() }
+					</div>
 				</Container>
 			)
 		}
@@ -58,7 +53,7 @@ export default class Project extends React.Component {
 
 	render() {
 		return (
-			this.Table()
+			this.getTable()
 		)
 	}
 }
