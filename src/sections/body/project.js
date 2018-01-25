@@ -64,8 +64,8 @@ export default class Project extends React.Component {
  
 		return(
 			<Desc className="col-md-5">
-				<Head>
-					<h2 className="text-center">{ t(`projects.${index}.name`) }</h2>
+				<Head className="text-center">
+					<h2>{ t(`projects.${index}.name`) }</h2>
 					<p>{ t(`projects.${index}.description`) }.</p>
 				</Head>
 				<div className="text-center">
@@ -121,7 +121,7 @@ export default class Project extends React.Component {
 
 	render() {
 		return (
-			<div>
+			<div id="projects">
 				<Title>Projects</Title>
 				{ this.getTable() }
 			</div>
