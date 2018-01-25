@@ -47,14 +47,14 @@
     {
       "name": "Tic Tac Toe",
       "github": "https://github.com/narongsakjob/tic-toc-toe-game",
-      "description": "This is a central project. Software Specification & Design is a game of marking an x or o in a 3x3 table for two players. The game will win when the player can check in vertical. Horizontal or diagonal",
+      "description": "This is a central project, Software Specification & Design is a game of marking an x or o in a 3x3 table for two players. The game will win when the player can check in vertical. Horizontal or diagonal",
       "server": "no",
       "wiki": "no"
     },
     {
-      "name": "Pokemon Valley Ball",
+      "name": "Pokemon Volley Ball",
       "github": "https://github.com/Facelespedia/pokemon-volleyball",
-      "description": "The software specification & design is a game of valley ball for 2 players who make the ball fall to the other side to get points if anyone points to 10 will winning",
+      "description": "The software specification & design is a game of volley ball for 2 players who make the ball fall to the other side to get points if anyone points to 10 will winning",
       "server": "no",
       "wiki": "no"
     },
@@ -89,7 +89,7 @@
     {
       "name": "exceed vote frontend",
       "github": "https://github.com/exceed-vote/vote-frontend",
-      "description": "The fontend website for the votes of the camp Exceed 14",
+      "description": "The frontend website for the votes of the camp Exceed 14",
       "server": "no",
       "wiki": "no"
     },
@@ -110,7 +110,7 @@
     {
       "name": "Coup Web",
       "github": "https://github.com/Coupdeg/coup-web",
-      "description": "This is a graduation project of workgroup software development process. It is an e-commerce website selling clothing and accessories of women with membership system. Trading Systems and Admin Section",
+      "description": "This is a graduation project of workgroup software development process. It is an e-Commerce website selling clothing and accessories of women with membership system. Trading Systems and Admin Section",
       "server": "http://coup-deg.herokuapp.com",
       "wiki": "no"
     }
