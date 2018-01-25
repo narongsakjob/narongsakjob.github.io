@@ -5,7 +5,7 @@ import Slider from 'react-slick'
 import img_projects from '../../assets/data'
 
 const Container = styled.div`
-	padding: 10%;
+	padding: 8%;
 `
 const Image = styled.img`
 	max-height: 300px;
@@ -22,10 +22,30 @@ export default class Project extends React.Component {
 
 	getData(index) {
 		let { t } = this.props 
+
+		let get_github = (index) => {
+			return <a href={t(`projects.${index}.github`)} target="_blank"><i className="fa fa-github" aria-hidden="true"></i></a>
+		}
+
+		let get_wiki = (index) => {
+			return <a href={t(`projects.${index}.wiki`)} target="_blank"><i className="fa fa-wikipedia-w" aria-hidden="true"></i></a>			
+		}
+
+		let get_www = (index) => {
+			return <a href={t(`projects.${index}.server`)} target="_blank"><i className="fa fa-globe" aria-hidden="true"></i></a>			
+		}
+ 
 		return(
 			<div className="col-md-6">
-				<h2 className="text-center">{ t(`projects.${index}.name`) }</h2>
-				<p>{ t(`projects.${index}.description`) }.</p>
+				<div>
+					<h2 className="text-center">{ t(`projects.${index}.name`) }</h2>
+					<p>{ t(`projects.${index}.description`) }.</p>
+				</div>
+				<div className="text-center">
+					{ t(`projects.${index}.github`) === 'no' ? "" : get_github(index) }
+					{ t(`projects.${index}.wiki`) === 'no' ? "" : get_wiki(index) }
+					{ t(`projects.${index}.server`) === 'no' ? "" : get_www(index) }					
+				</div>
 			</div>
 		)
 	}
