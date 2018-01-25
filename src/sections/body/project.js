@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import Slider from 'react-slick'
 
-import img_projects from '../../assets/data'
+import img_projects from './data'
 
 const Container = styled.div`
 	padding: 8%;
@@ -72,7 +72,7 @@ export default class Project extends React.Component {
 			<div className="col-md-6 text-center">
 				<Slider {...settings} className="text-center">
 					{ img_projects[index].map((image, i) => 
-						<Image src= { require(`../../assets/images/projects/${image}.png`) } />
+						<Image src= { image } />
 					)}
         </Slider>
 			</div>
