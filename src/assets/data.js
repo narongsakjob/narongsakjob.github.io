@@ -9,14 +9,14 @@ const projects_images = [
 		"tic_tac_toe_2",
 	],
 	[
-		"wallet_1",
-		"wallet_2"
-	],
-	[
 		"pokemon_1",
 		"pokemon_2",
 		"pokemon_3",
 		"pokemon_4",		
+	],
+	[
+		"wallet_1",
+		"wallet_2"
 	],
 	[
 		"incident_1",
