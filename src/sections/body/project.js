@@ -49,6 +49,9 @@ export default class Project extends React.Component {
 		let get_www = (index) => {
 			return <Link href={t(`projects.${index}.server`)} target="_blank"><i className="fa fa-globe globe" aria-hidden="true"></i></Link>			
 		}
+		let get_private = () => {
+			return <div><i class="fa fa-lock wiki" aria-hidden="true"></i> Private code</div>
+		}
  
 		return(
 			<Desc className="col-md-5">
@@ -57,7 +60,7 @@ export default class Project extends React.Component {
 					<p>{ t(`projects.${index}.description`) }.</p>
 				</Head>
 				<div className="text-center">
-					{ t(`projects.${index}.github`) === 'no' ? "" : get_github(index) }
+					{ t(`projects.${index}.github`) === 'no' ? get_private() : get_github(index) }
 					{ t(`projects.${index}.wiki`) === 'no' ? "" : get_wiki(index) }
 					{ t(`projects.${index}.server`) === 'no' ? "" : get_www(index) }					
 				</div>
