@@ -69,13 +69,14 @@ export default class Project extends React.Component {
 	
 		const settings = {
       dots: true,
-      speed: 400,
-      slidesToShow: 1,
-			slidesToScroll: 1
+			speed: 400,
+			lazyLoad: true,
+			focusOnSelect: true,
+			autoplay: true
 		};
 		return(
 			<div className="col-md-6 text-center">
-				<Slider {...settings} className="text-center">
+				<Slider {...settings} className="text-center" key={index}>
 					{ img_projects[index].map((image, i) => 
 						<Image src= { image } />
 					)}
