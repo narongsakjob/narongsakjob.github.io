@@ -34,8 +34,8 @@ export default class Change extends React.Component {
 
 		return(
 			<Container>
-				<Button onClick={() => changeLanguage('th')}><Image src={ require("../../assets/images/th.png") } alt='' /></Button>
-				<Button onClick={() => changeLanguage('en')}><Image src={ require("../../assets/images/en.png") } alt='' /></Button>
+				<Button onClick={() => changeLanguage('th')}>TH</Button>|
+				<Button onClick={() => changeLanguage('en')}>EN</Button>
 			</Container>
 		)
 	}
