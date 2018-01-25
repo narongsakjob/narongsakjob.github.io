@@ -5,7 +5,7 @@ import Slider from 'react-slick'
 import img_projects from './data'
 
 const Title = styled.div`
-	margin: 30px auto 0 auto;
+	margin: 0 auto 0 auto;
 	padding-bottom: 30px;
 	text-align: center;
 	border-bottom: 2px solid rgba(0,0,0,0.25);	
@@ -102,7 +102,7 @@ export default class Project extends React.Component {
 		let size = 11
 		for (let j = 0; j < size ; j++) {
 			table.push(
-				<Container style={{ backgroundColor: `${ j%2===0 ? '': '#f3f3f3'}` }} key={j}>
+				<Container style={{ backgroundColor: `${ j%2===0 ? '#fff': '#f3f3f3'}` }} key={j}>
 					<div className="row hidden-md-down">
 						{ j%2 === 0 ? this.getData(j) : this.getImage(j) }
 						<div className="col-md-1" style={ {zIndex: '-1'} } ></div>
@@ -120,7 +120,7 @@ export default class Project extends React.Component {
 
 	render() {
 		return (
-			<div id="projects">
+			<div style={{backgroundColor: "#fff", paddingTop: "20px"}}>
 				<Title>Projects</Title>
 				{ this.getTable() }
 			</div>
