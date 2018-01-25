@@ -53,13 +53,13 @@ export default class Project extends React.Component {
 			return <Link href={t(`projects.${index}.github`)} target="_blank"><i className="fa fa-github github" aria-hidden="true"></i></Link>
 		}
 		let get_wiki = (index) => {
-			return <Link href={t(`projects.${index}.wiki`)} target="_blank"><i class="fa fa-file wiki" aria-hidden="true"></i></Link>			
+			return <Link href={t(`projects.${index}.wiki`)} target="_blank"><i className="fa fa-file wiki" aria-hidden="true"></i></Link>			
 		}
 		let get_www = (index) => {
 			return <Link href={t(`projects.${index}.server`)} target="_blank"><i className="fa fa-globe globe" aria-hidden="true"></i></Link>			
 		}
 		let get_private = () => {
-			return <div><i class="fa fa-lock wiki" aria-hidden="true"></i> Private code</div>
+			return <div><i className="fa fa-lock wiki" aria-hidden="true"></i> Private code</div>
 		}
  
 		return(
@@ -90,7 +90,7 @@ export default class Project extends React.Component {
 			<div className="col-md-6 text-center">
 				<Slider {...settings} className="text-center" key={index}>
 					{ img_projects[index].map((image, i) => 
-						<Image src= { image } />
+						<Image src= { image } key={i}/>
 					)}
         </Slider>
 			</div>

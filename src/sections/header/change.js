@@ -14,15 +14,6 @@ const Button = styled.button`
 	&:hover{cursor: pointer;};
 `
 
-const Image = styled.img`
-	width: 30px;
-	height: 30px;
-	@media only screen and (max-width: 768px) {
-		width: 25px;
-		height: 25px;
-	}
-`
-
 export default class Change extends React.Component {
 	render() {
 		
