@@ -4,3 +4,6 @@ html {
 #app {
   height: 100%;
 }
+.slick-prev:before, .slick-next:before {
+  color: red !important;
+}

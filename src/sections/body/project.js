@@ -11,7 +11,17 @@ const Image = styled.img`
 	max-height: 300px;
 	width: 400px;
 `
-
+const Desc = styled.div`
+	border-radius: 10px;
+	box-shadow: 2px 2px 14px rgba(0, 0, 0, 0.25);
+	background-color: #ede3e1;
+	@media only screen and (max-width: 768px) {
+		margin-bottom: 4px;
+	}
+`
+const Head =styled.div`
+	margin-top: 10px;
+`
 
 export default class Project extends React.Component {
 
@@ -36,17 +46,17 @@ export default class Project extends React.Component {
 		}
  
 		return(
-			<div className="col-md-6">
-				<div>
+			<Desc className="col-md-5">
+				<Head>
 					<h2 className="text-center">{ t(`projects.${index}.name`) }</h2>
 					<p>{ t(`projects.${index}.description`) }.</p>
-				</div>
+				</Head>
 				<div className="text-center">
 					{ t(`projects.${index}.github`) === 'no' ? "" : get_github(index) }
 					{ t(`projects.${index}.wiki`) === 'no' ? "" : get_wiki(index) }
 					{ t(`projects.${index}.server`) === 'no' ? "" : get_www(index) }					
 				</div>
-			</div>
+			</Desc>
 		)
 	}
 
@@ -56,7 +66,7 @@ export default class Project extends React.Component {
       dots: true,
       speed: 400,
       slidesToShow: 1,
-      slidesToScroll: 1,
+			slidesToScroll: 1
 		};
 		return(
 			<div className="col-md-6 text-center">
@@ -84,8 +94,9 @@ export default class Project extends React.Component {
 		for (let j = 0; j < size ; j++) {
 			table.push(
 				<Container style={{ backgroundColor: `${ j%2===0 ? '': '#f3f3f3'}` }} key={j}>
-					<div className="container row hidden-md-down">
+					<div className="row hidden-md-down">
 						{ j%2 === 0 ? this.getData(j) : this.getImage(j) }
+						<div className="col-md-1" style={ {zIndex: '-1'} } ></div>
 						{ j%2 !== 0 ? this.getData(j) : this.getImage(j) }
 					</div>
 					<div className="container row hidden-lg-up">
