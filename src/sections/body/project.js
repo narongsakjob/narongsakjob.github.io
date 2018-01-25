@@ -4,6 +4,15 @@ import Slider from 'react-slick'
 
 import img_projects from './data'
 
+const Title = styled.div`
+	margin: 30px auto 0 auto;
+	padding-bottom: 30px;
+	text-align: center;
+	border-bottom: 2px solid rgba(0,0,0,0.25);	
+	width: 75%;
+	font-size: 40px;
+`
+
 const Container = styled.div`
 	padding: 8%;
 `
@@ -112,7 +121,10 @@ export default class Project extends React.Component {
 
 	render() {
 		return (
-			this.getTable()
+			<div>
+				<Title>Projects</Title>
+				{ this.getTable() }
+			</div>
 		)
 	}
 }
