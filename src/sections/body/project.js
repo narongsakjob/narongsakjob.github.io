@@ -23,6 +23,11 @@ const Image = styled.img`
 	max-height: 300px;
 	width: 400px;
 `
+const Link = styled.a`
+	border-radius: 0px;
+	padding: 10px;
+	color: black;
+`
 
 export default class Project extends React.Component {
 
@@ -36,13 +41,13 @@ export default class Project extends React.Component {
 		let { t } = this.props 
 
 		let get_github = (index) => {
-			return <a href={t(`projects.${index}.github`)} target="_blank"><i className="fa fa-github" aria-hidden="true"></i></a>
+			return <Link href={t(`projects.${index}.github`)} target="_blank"><i className="fa fa-github github" aria-hidden="true"></i></Link>
 		}
 		let get_wiki = (index) => {
-			return <a href={t(`projects.${index}.wiki`)} target="_blank"><i className="fa fa-wikipedia-w" aria-hidden="true"></i></a>			
+			return <Link href={t(`projects.${index}.wiki`)} target="_blank"><i class="fa fa-file wiki" aria-hidden="true"></i></Link>			
 		}
 		let get_www = (index) => {
-			return <a href={t(`projects.${index}.server`)} target="_blank"><i className="fa fa-globe" aria-hidden="true"></i></a>			
+			return <Link href={t(`projects.${index}.server`)} target="_blank"><i className="fa fa-globe globe" aria-hidden="true"></i></Link>			
 		}
  
 		return(

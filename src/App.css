@@ -7,3 +7,12 @@ html {
 .slick-prev:before, .slick-next:before {
   color: red !important;
 }
+.github {
+  font-size: 30px !important;
+}
+.wiki {
+  font-size: 25px !important;
+}
+.globe {
+  font-size: 30px !important;
+}
