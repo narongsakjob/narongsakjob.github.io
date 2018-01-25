@@ -1,8 +1,8 @@
 {
   "main.css": "static/css/main.0f332a0a.css",
   "main.css.map": "static/css/main.0f332a0a.css.map",
-  "main.js": "static/js/main.12d2a78a.js",
-  "main.js.map": "static/js/main.12d2a78a.js.map",
+  "main.js": "static/js/main.5e898abd.js",
+  "main.js.map": "static/js/main.5e898abd.js.map",
   "static/media/coup_1.png": "static/media/coup_1.c90ec82a.png",
   "static/media/coup_10.png": "static/media/coup_10.6badf09b.png",
   "static/media/coup_11.png": "static/media/coup_11.7007c16e.png",
@@ -62,6 +62,7 @@
   "static/media/tic_tac_toe_2.png": "static/media/tic_tac_toe_2.700469e2.png",
   "static/media/vote_1.png": "static/media/vote_1.c146576f.png",
   "static/media/vote_2.png": "static/media/vote_2.3c0a8726.png",
+  "static/media/waiting.gif": "static/media/waiting.b5d6b079.gif",
   "static/media/wallet_1.png": "static/media/wallet_1.7226e0d6.png",
   "static/media/wallet_2.png": "static/media/wallet_2.c2e0d7c8.png",
   "static/media/wtf_1.png": "static/media/wtf_1.c472f169.png",
