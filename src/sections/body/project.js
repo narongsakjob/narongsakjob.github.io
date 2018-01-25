@@ -7,10 +7,7 @@ import img_projects from '../../assets/data'
 const Container = styled.div`
 	padding: 8%;
 `
-const Image = styled.img`
-	max-height: 300px;
-	width: 400px;
-`
+
 const Desc = styled.div`
 	border-radius: 10px;
 	box-shadow: 2px 2px 14px rgba(0, 0, 0, 0.25);
@@ -22,6 +19,10 @@ const Desc = styled.div`
 const Head =styled.div`
 	margin-top: 10px;
 `
+const Image = styled.img`
+	max-height: 300px;
+	width: 400px;
+`
 
 export default class Project extends React.Component {
 
@@ -31,16 +32,15 @@ export default class Project extends React.Component {
 	}
 
 	getData(index) {
+
 		let { t } = this.props 
 
 		let get_github = (index) => {
 			return <a href={t(`projects.${index}.github`)} target="_blank"><i className="fa fa-github" aria-hidden="true"></i></a>
 		}
-
 		let get_wiki = (index) => {
 			return <a href={t(`projects.${index}.wiki`)} target="_blank"><i className="fa fa-wikipedia-w" aria-hidden="true"></i></a>			
 		}
-
 		let get_www = (index) => {
 			return <a href={t(`projects.${index}.server`)} target="_blank"><i className="fa fa-globe" aria-hidden="true"></i></a>			
 		}
@@ -71,17 +71,9 @@ export default class Project extends React.Component {
 		return(
 			<div className="col-md-6 text-center">
 				<Slider {...settings} className="text-center">
-					{(() => {
-						var images = []
-						for(var i = 0; i < img_projects[index].length; i++) {
-							var name = img_projects[index][i]
-							let img_url = require(`../../assets/images/projects/${name}.png`);
-							images.push(
-								<Image src={ img_url } key={i}/>								
-							)
-						}
-						return images
-					})()}
+					{ img_projects[index].map((image, i) => 
+						<Image src= { require(`../../assets/images/projects/${image}.png`) } />
+					)}
         </Slider>
 			</div>
 		)
