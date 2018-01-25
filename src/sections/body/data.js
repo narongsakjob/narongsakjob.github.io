@@ -2,31 +2,37 @@ const projects_images = [
 	[
 		require("../../assets/images/projects/shoot_ghost_1.png"),
 		require("../../assets/images/projects/shoot_ghost_2.png"),
-		require("../../assets/images/projects/shoot_ghost_3.png")
+		require("../../assets/images/projects/shoot_ghost_3.png"),
+		require("../../assets/images/projects/waiting.gif")
 	],
 	[
 		require("../../assets/images/projects/tic_tac_toe_1.png"),
-		require("../../assets/images/projects/tic_tac_toe_2.png"),		
+		require("../../assets/images/projects/tic_tac_toe_2.png"),
+		require("../../assets/images/projects/waiting.gif")		
 	],
 	[
 		require("../../assets/images/projects/pokemon_1.png"),
 		require("../../assets/images/projects/pokemon_2.png"),
 		require("../../assets/images/projects/pokemon_3.png"),
-		require("../../assets/images/projects/pokemon_4.png"),		
+		require("../../assets/images/projects/pokemon_4.png"),
+		require("../../assets/images/projects/waiting.gif")		
 	],
 	[
 		require("../../assets/images/projects/wallet_1.png"),
 		require("../../assets/images/projects/wallet_2.png"),
+		require("../../assets/images/projects/waiting.gif")
 	],
 	[
 		require("../../assets/images/projects/incident_1.png"),
-		require("../../assets/images/projects/incident_2.png"),			
+		require("../../assets/images/projects/incident_2.png"),
+		require("../../assets/images/projects/waiting.gif")		
 	],
 	[
 		require("../../assets/images/projects/wtf_1.png"),
 		require("../../assets/images/projects/wtf_2.png"),
 		require("../../assets/images/projects/wtf_3.png"),
-		require("../../assets/images/projects/wtf_4.png"),		
+		require("../../assets/images/projects/wtf_4.png"),
+		require("../../assets/images/projects/waiting.gif")				
 	],
 	[
 		require("../../assets/images/projects/faceles_1.png"),
@@ -36,18 +42,21 @@ const projects_images = [
 		require("../../assets/images/projects/faceles_5.png"),
 		require("../../assets/images/projects/faceles_6.png"),
 		require("../../assets/images/projects/faceles_7.png"),
-		require("../../assets/images/projects/faceles_8.png"),			
+		require("../../assets/images/projects/faceles_8.png"),
+		require("../../assets/images/projects/waiting.gif")			
 	],
 	[	
 		require("../../assets/images/projects/vote_1.png"),
-		require("../../assets/images/projects/vote_2.png"),		
+		require("../../assets/images/projects/vote_2.png"),	
+		require("../../assets/images/projects/waiting.gif")
 	],
 	[
 		require("../../assets/images/projects/medicon_1.png"),
 		require("../../assets/images/projects/medicon_2.png"),
 		require("../../assets/images/projects/medicon_3.png"),
 		require("../../assets/images/projects/medicon_4.png"),
-		require("../../assets/images/projects/medicon_5.png"),			
+		require("../../assets/images/projects/medicon_5.png"),
+		require("../../assets/images/projects/waiting.gif")			
 	],
 	[
 		require("../../assets/images/projects/getkaset_1.png"),
@@ -57,7 +66,8 @@ const projects_images = [
 		require("../../assets/images/projects/getkaset_5.png"),
 		require("../../assets/images/projects/getkaset_6.png"),
 		require("../../assets/images/projects/getkaset_7.png"),
-		require("../../assets/images/projects/getkaset_8.png"),							
+		require("../../assets/images/projects/getkaset_8.png"),
+		require("../../assets/images/projects/waiting.gif")							
 	],
 	[
 		require("../../assets/images/projects/coup_1.png"),
@@ -72,7 +82,8 @@ const projects_images = [
 		require("../../assets/images/projects/coup_10.png"),
 		require("../../assets/images/projects/coup_11.png"),
 		require("../../assets/images/projects/coup_12.png"),
-		require("../../assets/images/projects/coup_13.png"),		
+		require("../../assets/images/projects/coup_13.png"),
+		require("../../assets/images/projects/waiting.gif")		
 	]
 ]
 
