@@ -13,16 +13,11 @@ const Title = styled.div`
 
 export default class Middle extends React.Component {
 
-	check_position () {
-		var winHeight = window.innerHeight;
-		console.log(winHeight)
-	}
-
 	render() {
+		let { t } = this.props
 		return(
 			<Container>
-				{ this.check_position() }
-				<Title>Welcome</Title>
+				<Title>{ t('title') }</Title>
 			</Container>
 		)
 	}

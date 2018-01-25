@@ -22,7 +22,7 @@ export default class About extends React.Component {
 		super(props)
 		this.Profile = this.Profile.bind(this)
 	}
-
+	
 	Profile() {
 		let { t } = this.props
 		let image_url = require("../../assets/images/me.jpg")

@@ -78,7 +78,6 @@ export default class Project extends React.Component {
 	}
 
 	getImage(index) {
-	
 		const settings = {
       dots: true,
 			speed: 400,

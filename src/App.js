@@ -11,13 +11,9 @@ import Footer from './components/footer'
 import './App.css';
 
 class App extends Component {
-  check_position() {
-    var winHeight = window.innerHeight;
-    console.log(winHeight)
-  }
   render() {
     const { t, i18n } = this.props;
-    this.check_position()
+    
     return (
       <div id="App">
         <Header t={t} i18n={i18n} />
