@@ -40,7 +40,7 @@
     {
       "name": "Shoot A Ghost",
       "github": "https://github.com/narongsakjob/shoot-a-ghost",
-      "description": "This is final project Individual Software Development Process. The game is a shooting game, collecting ghosts, players must shoot and dodge the bullets of ghosts before the ghost will enter the warp",
+      "description": "This is my project for the Individual Software Development Process course. It is a 2D shooter with the goal of shooting the ghost before it enter it's escape portal",
       "server": "no",
       "wiki": "no"
     },

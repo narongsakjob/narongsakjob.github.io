@@ -13,7 +13,7 @@ const Desc = styled.div`
 	box-shadow: 2px 2px 14px rgba(0, 0, 0, 0.25);
 	background-color: #ede3e1;
 	@media only screen and (max-width: 768px) {
-		margin-bottom: 4px;
+		margin-bottom: 20px;
 	}
 `
 const Head =styled.div`
