@@ -56,7 +56,8 @@ const projects_images = [
 		"getkaset_4",		
 		"getkaset_5",		
 		"getkaset_6",		
-		"getkaset_7",				
+		"getkaset_7",
+		"getkaset_8",										
 	],
 	[
 		"coup_1",		
