@@ -4,9 +4,6 @@ import { render } from 'react-dom';
 //i18n
 import { translate } from 'react-i18next'
 
-//Scroll
-import { Element, scrollSpy, Events, Link } from 'react-scroll';
-
 //Components
 import Header from './components/header'
 import Body from './components/body'

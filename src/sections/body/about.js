@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import { Element, scrollSpy, Events, Link } from 'react-scroll';
 import Profile from './information'
 import Contact from './contact'
 
@@ -61,14 +62,20 @@ export default class About extends React.Component {
 		let image_url = require("../../assets/images/me.jpg")
 		return (
 			<Container className="container">
-				<div className="row">
-					<Image src={ image_url }  className="rounded-circle img-fluid col-md-4" key="image"/><br/>
-					{this.About()}
-				</div>
-				<Title><i className="fa fa-user-circle" aria-hidden="true"></i> { t('title.information') }</Title>
-				<Profile t={t} />
-				<Title><i className="fa fa-address-book" aria-hidden="true"></i> { t('title.contact') }</Title>
-				<Contact t={t}/>
+				<Element name="about">
+					<div className="row">
+						<Image src={ image_url }  className="rounded-circle img-fluid col-md-4" key="image"/><br/>
+						{this.About()}
+					</div>
+				</Element>
+				<Element name="profile">				
+					<Title><i className="fa fa-user-circle" aria-hidden="true"></i> { t('title.information') }</Title>
+					<Profile t={t} />
+				</Element>
+				<Element name="contact">				
+					<Title><i className="fa fa-address-book" aria-hidden="true"></i> { t('title.contact') }</Title>
+					<Contact t={t}/>
+				</Element>
 			</Container>
 		)
 	}

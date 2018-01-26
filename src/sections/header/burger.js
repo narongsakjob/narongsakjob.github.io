@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { slide as Menu } from 'react-burger-menu'
+import { Element, scrollSpy, Events, Link } from 'react-scroll';
 
 var styles = {
   bmBurgerButton: {
@@ -40,9 +41,10 @@ class Burger extends Component {
   render () {
     return (
 			<Menu left styles={ styles }>
-				<a id="home" className="menu-item" href="/">Home</a>
-				<a id="about" className="menu-item" href="/about">About</a>
-				<a id="contact" className="menu-item" href="/contact">Contact</a>
+				<Link to="about" spy={true} smooth={true} duration={500} offset={-50} className="menu-item" href="#">About</Link>
+				<Link to="profile" spy={true} smooth={true} duration={500} offset={-50} className="menu-item" href="#">Information</Link>
+				<Link to="contact" spy={true} smooth={true} duration={500} offset={-50} className="menu-item" href="#">Contact</Link>
+				<Link to="project" spy={true} smooth={true} duration={500} offset={-50} className="menu-item" href="#">Projects</Link>        
 			</Menu>
     );
   }
