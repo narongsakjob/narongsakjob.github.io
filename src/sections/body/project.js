@@ -41,6 +41,14 @@ const Link = styled.a`
 	border-radius: 0px;
 	padding: 10px;
 	color: black;
+	&:hover {
+		transform: scale(1.2);
+	}
+`
+const Icon = styled.i`
+	&:hover {
+		transform: scale(1.2);
+	}
 `
 
 export default class Project extends React.Component {
@@ -55,13 +63,13 @@ export default class Project extends React.Component {
 		let { t } = this.props 
 
 		let get_github = (index) => {
-			return <Link href={t(`projects.${index}.github`)} target="_blank"><i className="fa fa-github github" aria-hidden="true"></i></Link>
+			return <Link href={t(`projects.${index}.github`)} target="_blank"><Icon className="fa fa-github github" aria-hidden="true"></Icon></Link>
 		}
 		let get_wiki = (index) => {
-			return <Link href={t(`projects.${index}.wiki`)} target="_blank"><i className="fa fa-file wiki" aria-hidden="true"></i></Link>			
+			return <Link href={t(`projects.${index}.wiki`)} target="_blank"><Icon className="fa fa-file wiki" aria-hidden="true"></Icon></Link>			
 		}
 		let get_www = (index) => {
-			return <Link href={t(`projects.${index}.server`)} target="_blank"><i className="fa fa-globe globe" aria-hidden="true"></i></Link>			
+			return <Link href={t(`projects.${index}.server`)} target="_blank"><Icon className="fa fa-globe globe" aria-hidden="true"></Icon></Link>			
 		}
 		let get_private = () => {
 			return <div><i className="fa fa-lock wiki" aria-hidden="true"></i> Private code</div>
