@@ -44,7 +44,6 @@ export default class Middle extends React.Component {
 	}
 
 	render() {
-		let { t } = this.props
 		return(
 			<Container onScroll={this.listenScrollEvent}>
 				<ScrollEvent handleScrollCallback={this.handleScrollCallback} />

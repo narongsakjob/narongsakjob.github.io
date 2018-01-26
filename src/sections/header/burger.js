@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { slide as Menu } from 'react-burger-menu'
-import { Element, scrollSpy, Events, Link } from 'react-scroll';
+import { Link } from 'react-scroll';
 
 var styles = {
   bmBurgerButton: {

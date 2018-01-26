@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import { Element, scrollSpy, Events, Link } from 'react-scroll';
+import { Element } from 'react-scroll';
 import Profile from './information'
 import Contact from './contact'
 
