@@ -33,23 +33,27 @@ const Label = styled.button`
 `
 
 const contact = ({t}) => (
+	<div>
 	<Container className="row">
 		<div className="col-md-6">
 			<div className="row">
-				<a className="col-md-6 text-right" href="https://www.facebook.com/NarongsakJob" target="_blank"><Label><i className="fa fa-facebook-official" aria-hidden="true"></i> Facebook</Label></a>
-				<a className="col-md-6 text-center" href="https://github.com/narongsakjob" target="_blank"><Label><i className="fa fa-github" aria-hidden="true"></i> Github</Label></a>
+				<div className="col-md-4 hidden-md-down"/>
+				<a className="col-md-4" href="https://www.facebook.com/NarongsakJob" target="_blank"><Label><i className="fa fa-facebook-official" aria-hidden="true"></i> Facebook</Label></a>
+				<a className="col-md-4" href="https://github.com/narongsakjob" target="_blank"><Label><i className="fa fa-github" aria-hidden="true"></i> Github</Label></a>
 			</div>
-			<div className="row">			
-				<a className="col-md-6 text-right" href="http://line.me/ti/p/~job_ynwa" target="_blank"><Label><i className="fa fa-comment-o" aria-hidden="true"></i> Line</Label></a>
-				<a className="col-md-6" href="mailto:narongsak.chobsri@gmail.com" target="_blank"><Label><i className="fa fa-envelope" aria-hidden="true"></i> Email</Label></a>
+			<div className="row">	
+				<div className="col-md-4 hidden-md-down"/>					
+				<a className="col-md-4" href="http://line.me/ti/p/~job_ynwa" target="_blank"><Label><i className="fa fa-comment-o" aria-hidden="true"></i> Line</Label></a>
+				<a className="col-md-4" href="mailto:narongsak.chobsri@gmail.com" target="_blank"><Label><i className="fa fa-envelope" aria-hidden="true"></i> Email</Label></a>
 			</div>
-			<div className="row"><div className="col-md-4"/><Label className="col-md-6"><i className="fa fa-phone" aria-hidden="true"></i> +66 911018404</Label></div>
 		</div>
 		<Address className="col-md-4">
 			<h3><i class="fa fa-map-marker" aria-hidden="true"></i>  Address</h3>
 			{t('about.address')}
 		</Address>
 	</Container>
+	<div className="row"><div className="col-md-4"/><Label className="col-md-4"><i className="fa fa-phone" aria-hidden="true"></i> +66 911018404</Label></div>
+	</div>
 )
 
 export default contact
