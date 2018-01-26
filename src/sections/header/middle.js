@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import ScrollEvent from 'react-onscroll';
 
 const Container = styled.div`
 	margin: auto 0% auto 42.5%;
@@ -13,6 +14,15 @@ const Title = styled.div`
 
 export default class Middle extends React.Component {
 	
+	constructor(props) {
+		super(props);
+
+		this.handleScrollCallback = this.handleScrollCallback.bind(this);
+	}
+
+	handleScrollCallback() {
+		console.log("A scroll event occurred!");
+	}
 	listenScrollEvent() {
     console.log('Scroll event detected!');
 	}
@@ -21,6 +31,7 @@ export default class Middle extends React.Component {
 		let { t } = this.props
 		return(
 			<Container onScroll={this.listenScrollEvent}>
+				<ScrollEvent handleScrollCallback={this.handleScrollCallback} />
 				<Title>{ t('title.welcome') }</Title>
 			</Container>
 		)
