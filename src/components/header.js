@@ -14,7 +14,7 @@ const Container = styled.div`
 
 const Header = props => (
 	<div>
-		<Container className="row fixed-top hidden-md-down">
+		<Container className="row fixed-top hidden-md-down" name="navbar">
 			<Burger />
 			<Middle t={props.t}/>
 			<Change i18n={props.i18n} />
