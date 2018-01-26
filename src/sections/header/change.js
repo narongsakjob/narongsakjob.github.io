@@ -12,6 +12,7 @@ const Button = styled.button`
 	border: 0;
 	&:focus{outline: 0;};
 	&:hover{cursor: pointer;};
+	color: #931F1D;
 `
 
 export default class Change extends React.Component {

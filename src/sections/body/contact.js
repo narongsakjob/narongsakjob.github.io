@@ -9,18 +9,20 @@ const Container = styled.div`
 	padding: 20px 0 20px 0;
 `
 const Address = styled.div`
+	color: #F5F5F5;
 	border-radius: 10px;
 	box-shadow: 2px 2px 14px rgba(0, 0, 0, 0.25);
-	background-color: #ede3e1;
+	background-color: #B5AD6A;
 	align-self: center;
 	padding: 20px 0 20px 0;
 `
 const Label = styled.button`
+	color: #F5F5F5;
 	border: 0;
 	padding: 5px 20px 5px 20px;
 	border-radius: 20px;
 	margin-bottom: 10px;
-	background-color: #f5f5f5;
+	background-color: #B5AD6A;
 	&:hover {
 		cursor: pointer;
 		transform: scale(1.2);

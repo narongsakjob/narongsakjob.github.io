@@ -10,6 +10,7 @@ const Title = styled.div`
 	border-bottom: 2px solid rgba(0,0,0,0.25);	
 	width: 75%;
 	font-size: 40px;
+	color: #B5AD6A;
 `
 
 const Container = styled.div`
@@ -30,9 +31,10 @@ const AboutMe = styled.div`
 	align-self: center;
 	border-radius: 10px;
 	box-shadow: 2px 2px 14px rgba(0, 0, 0, 0.25);
-	background-color: #ede3e1;
+	background-color: #B5AD6A;
 	word-wrap: break-word;
 	padding: 20px;
+	color: #FFF;
 `
 
 

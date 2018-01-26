@@ -11,6 +11,7 @@ const Title = styled.div`
 	border-bottom: 2px solid rgba(0,0,0,0.25);	
 	width: 75%;
 	font-size: 40px;
+	color: #B5AD6A;
 `
 
 const Container = styled.div`
@@ -25,7 +26,8 @@ const Underline = styled.div`
 const Desc = styled.div`
 	border-radius: 10px;
 	box-shadow: 2px 2px 14px rgba(0, 0, 0, 0.25);
-	background-color: #ede3e1;
+	background-color: #B5AD6A;
+	color: #F5F5F5;
 	@media only screen and (max-width: 768px) {
 		margin-bottom: 20px;
 	}

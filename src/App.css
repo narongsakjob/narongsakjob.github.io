@@ -9,10 +9,18 @@ html {
 }
 .github {
   font-size: 30px !important;
+  color: #F5F5F5;
 }
 .wiki {
   font-size: 25px !important;
+  color: #f5f5f5;
 }
 .globe {
   font-size: 30px !important;
+  color: #f5f5f5;
+}
+.menu-item {
+  color: #FEFEFE;
+  text-align: center;
+  text-decoration: none !important;
 }

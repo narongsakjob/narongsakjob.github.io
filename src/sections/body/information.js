@@ -5,7 +5,8 @@ const Information = styled.div`
 	margin-top: 20px;
 	border-radius: 10px;
 	box-shadow: 2px 2px 14px rgba(0, 0, 0, 0.25);
-	background-color: #ede3e1;
+	background-color: #B5AD6A;
+	color: #F5F5F5;
 	padding: 20px 0 20px 0;
 	margin: 0 auto 0 auto;
 	font-weight: bold;

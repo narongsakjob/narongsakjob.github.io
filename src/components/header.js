@@ -9,6 +9,7 @@ const Container = styled.div`
 	height: 100px;
 	background-color: #FFF;
 	border-bottom: 2px solid rgba(0,0,0,.07);
+	color: #931F1D;
 `
 
 const Header = props => (
