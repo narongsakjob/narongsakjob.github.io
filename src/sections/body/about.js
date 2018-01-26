@@ -47,8 +47,8 @@ export default class About extends React.Component {
 		let { t } = this.props
 		return (
 			<AboutMe className="col-md-7">
-				<h1>Narongsak Chobsri</h1>
-				<h4 style={{ marginBottom: "20px" }}>Software Developer</h4>
+				<h1>{t('about.first_name.value')} {t('about.last_name.value')}</h1>
+				<h4 style={{ marginBottom: "20px" }}>{t('about.role')}</h4>
 				<p>{ t('about.title') }</p>
 			</AboutMe>
 		)
@@ -63,9 +63,9 @@ export default class About extends React.Component {
 					<Image src={ image_url }  className="rounded-circle img-fluid col-md-4" key="image"/><br/>
 					{this.About()}
 				</div>
-				<Title><i class="fa fa-user-circle" aria-hidden="true"></i> Information</Title>
+				<Title><i class="fa fa-user-circle" aria-hidden="true"></i> { t('title.information') }</Title>
 				<Profile t={t} />
-				<Title><i class="fa fa-address-book" aria-hidden="true"></i> Contact</Title>
+				<Title><i class="fa fa-address-book" aria-hidden="true"></i> { t('title.contact') }</Title>
 				<Contact t={t}/>
 			</Container>
 		)

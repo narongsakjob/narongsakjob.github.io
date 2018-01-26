@@ -136,9 +136,10 @@ export default class Project extends React.Component {
 	}
 
 	render() {
+		let {t} = this.props
 		return (
 			<div>
-				<Title><i class="fa fa-th" aria-hidden="true"></i> Projects</Title>
+				<Title><i class="fa fa-th" aria-hidden="true"></i> { t('title.project') }</Title>
 				{ this.getTable() }
 			</div>
 		)

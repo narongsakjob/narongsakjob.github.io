@@ -17,7 +17,7 @@ export default class Middle extends React.Component {
 		let { t } = this.props
 		return(
 			<Container>
-				<Title>{ t('title') }</Title>
+				<Title>{ t('title.welcome') }</Title>
 			</Container>
 		)
 	}
