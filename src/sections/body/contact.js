@@ -22,7 +22,9 @@ const Label = styled.button`
 	margin-bottom: 10px;
 	&:hover {
 		cursor: pointer;
-		
+	}
+	&:focus {
+		outline: none;
 	}
 `
 
@@ -40,7 +42,7 @@ const contact = ({t}) => (
 			<div className="row"><div className="col-md-4"/><Label className="col-md-6"><i className="fa fa-phone" aria-hidden="true"></i> +66 911018404</Label></div>
 		</div>
 		<Address className="col-md-4">
-			<h3>Address</h3>
+			<h3><i class="fa fa-map-marker" aria-hidden="true"></i>  Address</h3>
 			{t('about.address')}
 		</Address>
 	</Container>

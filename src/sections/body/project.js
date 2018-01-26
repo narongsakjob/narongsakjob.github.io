@@ -127,7 +127,7 @@ export default class Project extends React.Component {
 	render() {
 		return (
 			<div>
-				<Title>Projects</Title>
+				<Title><i class="fa fa-th" aria-hidden="true"></i> Projects</Title>
 				{ this.getTable() }
 			</div>
 		)
