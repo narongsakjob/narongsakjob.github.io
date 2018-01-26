@@ -1,7 +1,11 @@
 import React, { Component } from 'react'
+import { render } from 'react-dom';
 
 //i18n
 import { translate } from 'react-i18next'
+
+//Scroll
+import { Element, scrollSpy, Events, Link } from 'react-scroll';
 
 //Components
 import Header from './components/header'
@@ -25,3 +29,9 @@ class App extends Component {
 }
 
 export default translate('translations')(App);
+
+document.body.addEventListener("scroll", () => {
+
+  console.log("scroll event outside ")
+
+});

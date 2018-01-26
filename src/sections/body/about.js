@@ -65,9 +65,9 @@ export default class About extends React.Component {
 					<Image src={ image_url }  className="rounded-circle img-fluid col-md-4" key="image"/><br/>
 					{this.About()}
 				</div>
-				<Title><i class="fa fa-user-circle" aria-hidden="true"></i> { t('title.information') }</Title>
+				<Title><i className="fa fa-user-circle" aria-hidden="true"></i> { t('title.information') }</Title>
 				<Profile t={t} />
-				<Title><i class="fa fa-address-book" aria-hidden="true"></i> { t('title.contact') }</Title>
+				<Title><i className="fa fa-address-book" aria-hidden="true"></i> { t('title.contact') }</Title>
 				<Contact t={t}/>
 			</Container>
 		)

@@ -1,9 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
 
-const Title = styled.div`
-`
-
 const Container = styled.div`
 	margin-top: 20px;
 	padding: 20px 0 20px 0;
@@ -38,17 +35,17 @@ const contact = ({t}) => (
 		<div className="col-md-6">
 			<div className="row">
 				<div className="col-md-4 hidden-md-down"/>
-				<a className="col-md-4" href="https://www.facebook.com/NarongsakJob" target="_blank"><Label><i className="fa fa-facebook-official" aria-hidden="true"></i> Facebook</Label></a>
-				<a className="col-md-4" href="https://github.com/narongsakjob" target="_blank"><Label><i className="fa fa-github" aria-hidden="true"></i> Github</Label></a>
+				<a className="col-md-4" href="https://www.facebook.com/NarongsakJob" target="_blank" rel="noopener noreferrer"><Label><i className="fa fa-facebook-official" aria-hidden="true"></i> Facebook</Label></a>
+				<a className="col-md-4" href="https://github.com/narongsakjob" target="_blank" rel="noopener noreferrer"><Label><i className="fa fa-github" aria-hidden="true"></i> Github</Label></a>
 			</div>
 			<div className="row">	
 				<div className="col-md-4 hidden-md-down"/>					
-				<a className="col-md-4" href="http://line.me/ti/p/~job_ynwa" target="_blank"><Label><i className="fa fa-comment-o" aria-hidden="true"></i> Line</Label></a>
-				<a className="col-md-4" href="mailto:narongsak.chobsri@gmail.com" target="_blank"><Label><i className="fa fa-envelope" aria-hidden="true"></i> Email</Label></a>
+				<a className="col-md-4" href="http://line.me/ti/p/~job_ynwa" target="_blank" rel="noopener noreferrer"><Label><i className="fa fa-comment-o" aria-hidden="true"></i> Line</Label></a>
+				<a className="col-md-4" href="mailto:narongsak.chobsri@gmail.com" target="_blank" rel="noopener noreferrer"><Label><i className="fa fa-envelope" aria-hidden="true"></i> Email</Label></a>
 			</div>
 		</div>
 		<Address className="col-md-4">
-			<h3><i class="fa fa-map-marker" aria-hidden="true"></i>  Address</h3>
+			<h3><i className="fa fa-map-marker" aria-hidden="true"></i>  Address</h3>
 			{t('about.address')}
 		</Address>
 	</Container>
