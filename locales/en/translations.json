@@ -1,7 +1,13 @@
 {
-  "title": "Welcome",
+  "title": {
+    "welcome": "Welcome",
+    "information": "Information",
+    "contact": "Contact",
+    "project": "Projects"
+  },
   "about": {
-    "title": "Hi, My name's Job. I'm a programmer student interested in web-development and i love to learn new thing",
+    "title": "Hi, My name's Job. I'm a  student at Kasetsart University degree of Software and Knowledge Engineering, interested in web-development and i love to learn new thing",
+    "role": "Software Developer",
     "address": "196 soi samukkee34 thasai mhuang nonthaburi 11000 thailand",
     "first_name": {
       "label": "Name",
@@ -43,77 +49,88 @@
       "github": "https://github.com/narongsakjob/shoot-a-ghost",
       "description": "This is my project for the Individual Software Development Process course. It is a 2D shooter with the goal of shooting the ghost before it enter it's escape portal",
       "server": "no",
-      "wiki": "no"
+      "wiki": "no",
+      "tags": "Javascript, Cocos2d"      
     },
     {
       "name": "Tic Tac Toe",
       "github": "https://github.com/narongsakjob/tic-toc-toe-game",
       "description": "This is a central project, Software Specification & Design is a game of marking an x or o in a 3x3 table for two players. The game will win when the player can check in vertical. Horizontal or diagonal",
       "server": "no",
-      "wiki": "no"
+      "wiki": "no",
+      "tags": "Java"            
     },
     {
       "name": "Pokemon Volley Ball",
       "github": "https://github.com/Facelespedia/pokemon-volleyball",
       "description": "The software specification & design is a game of volley ball for 2 players who make the ball fall to the other side to get points if anyone points to 10 will winning",
       "server": "no",
-      "wiki": "no"
+      "wiki": "no",
+      "tags": "Java"                  
     },
     {
       "name": "Wallet App",
       "github": "https://github.com/Facelespedia/WalletApp",
       "description": "This is a complete project of software specification & design is an Android application that is used to record our income, money and balance",
       "server": "no",
-      "wiki": "no"
+      "wiki": "no",
+      "tags": "Java, Andriod"                  
     },
     {
       "name": "Incident Software",
       "github": "https://github.com/narongsakjob/infudent-software",
       "description": "The site works with hardware to display the amount of water left in the garden. And in real time, the graph of soil moisture and light density. The temperature is displayed in real time. You can also set time for watering in the garden",
       "server": "no",
-      "wiki": "http://exceed.cpe.ku.ac.th/wiki/index.php/Exceed_13_External"
+      "wiki": "http://exceed.cpe.ku.ac.th/wiki/index.php/Exceed_13_External",
+      "tags": "HTML, CSS, Javascript, jQuery"                        
     },
     {
       "name": "What The Fast",
       "github": "https://github.com/Facelespedia/speed-test",
       "description": "This is a Data Comunication Skill project, a website that checks the speed of the Internet, displays ping, ip address, download, upload, and server using checks",
       "server": "no",
-      "wiki": "no"
+      "wiki": "no",
+      "tags": "HTML, CSS, Javascript, jQuery"                              
     },
     {
       "name": "Facelespedia",
       "github": "https://github.com/Facelespedia/Facelespedia",
       "description": "This is a database completion project. The site provides statistics on the players and the hero of the game Dota2",
       "server": "no",
-      "wiki": "no"
+      "wiki": "no",
+      "tags": "HTML, CSS, Javascript, jQuery, Node.js"                                    
     },
     {
       "name": "exceed vote frontend",
       "github": "https://github.com/exceed-vote/vote-frontend",
       "description": "The frontend website for the votes of the camp Exceed 14",
       "server": "no",
-      "wiki": "no"
+      "wiki": "no",
+      "tags": "HTML, CSS, Javascript, jQuery"                                          
     },
     {
       "name": "Medicon App (Cycle1)",
       "github": "no",
       "description": "It is a website for counseling, treatment advice for those who think that there is a problem to consult with a psychiatrist",
       "server": "no",
-      "wiki": "no"
+      "wiki": "no",
+      "tags": "Ruby on Rails, SASS, Slim, jQuery"                                                
     },
     {
       "name": "Getkaset (Cycle1)",
       "github": "no",
       "description": "An e-Commerce site for selling agricultural products. There is a section of the question - answer the article and have members systems, trading systems and parts of the product management",
       "server": "no",
-      "wiki": "no"
+      "wiki": "no",
+      "tags": "Ruby on Rails, SASS, jQuery"      
     },
     {
       "name": "Coup Web",
       "github": "https://github.com/Coupdeg/coup-web",
       "description": "This is a graduation project of workgroup software development process. It is an e-Commerce website selling clothing and accessories of women with membership system. Trading Systems and Admin Section",
       "server": "http://coup-deg.herokuapp.com",
-      "wiki": "no"
+      "wiki": "no",
+      "tags": "Django, SASS, jQuery, Heroku"
     }
   ]
 }

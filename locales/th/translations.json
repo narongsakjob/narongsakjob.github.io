@@ -1,7 +1,13 @@
 {
-  "title": "ยินดีต้อนรับ",
+  "title": {
+    "welcome": "ยินดีต้อนรับ",
+    "information": "ข้อมูล",
+    "contact": "ติดต่อ",
+    "project": "ผลงาน"
+  },
   "about": {
-    "title": "ยินดีต้อนรับสู่แฟ้มแสดงผลงานของฉัน",
+    "title": "สวัสดีครับ, ผมชื่อจ๊อบ. ผมเป็นนักศึกษามหาลัยเกษตรศาสตร์คณะวิศวกรรมศาสตร์สาขาซอฟแวร์และความรู้ ผมมีความสนใจในด้านการพัฒนาเว็บไซต์และผมชอบที่จะเรียนรู้สิ่งใหม่ๆ",
+    "role": "นักพัฒนาซอฟแวร์",
     "address": "196 ซ.สามัคคี34 ต.ท่าทราย อ.เมือง จ.นนทบุรี 11000 ประเทศไทย",
     "first_name": {
       "label": "ชื่อ",
@@ -42,77 +48,88 @@
       "github": "https://github.com/narongsakjob/shoot-a-ghost",
       "description": "นี่คือโปรเจคจบวิชา Individual Software Development Process เป็นเกมส์ยิงผีเก็บคะแนนผู้เล่นต้องยิงและหลบกระสุนของผีที่ออกมาก่อนผีจะเข้าไปในวาร์ป",
       "server": "no",
-      "wiki": "no"
+      "wiki": "no",
+      "tags": "Javascript, Cocos2d"      
     },
     {
       "name": "Tic Tac Toe",
       "github": "https://github.com/narongsakjob/tic-toc-toe-game",
       "description": "นี่คือโปรเจคกลางภาควิชา Software Specification & Design เป็นเกมส์กาเครื่องหมาย x หรือ o ในตารางขนาด 3x3 สำหรับผู้เล่น 2 คน เกมส์จะชนะเมื่อผู้เล่นสามารถกาเครื่องหมายในแนวตั้ง แนวนอนหรือแนวทแยงได้ครบ",
       "server": "no",
-      "wiki": "no"
+      "wiki": "no",
+      "tags": "Java"            
     },
     {
       "name": "Pokemon Valley Ball",
       "github": "https://github.com/Facelespedia/pokemon-volleyball",
       "description": "นี่คือโปรเจคจบวิชา Software Specification & Design เป็นเกมส์วอลเลย์บอลสำหรับเล่น 2 คนใครทำบอลตกพื้นอีกฝั่งได้จะได้แต้มถ้าใครแต้มถึง 10 ก่อนจะชนะ",
       "server": "no",
-      "wiki": "no"
+      "wiki": "no",
+      "tags": "Java"                  
     },
     {
       "name": "Wallet App",
       "github": "https://github.com/Facelespedia/WalletApp",
       "description": "นี่เป็นโปรเจคจบวิชา Software Specification & Design เป็นแอนดรอยแอพพลิเคชั่นที่ไว้ใช้สำครับบันทึกรายรับรายจ่ายเงินคงเหลือของเรา",
       "server": "no",
-      "wiki": "no"
+      "wiki": "no",
+      "tags": "Java, Andriod"                  
     },
     {
       "name": "Incident Software",
       "github": "https://github.com/narongsakjob/infudent-software",
       "description": "เว็บไซต์ที่ทำงานร่วมกับฮาร์ดแวร์แสดงปริมาณน้ำที่เหลืออยู่ในสวน และในเวลาจริงเส้นกราฟของความชื้นในดินและความหนาแน่นของแสง อุณหภูมิจะแสดงในแบบเรียลไทม์ นอกจากนี้คุณยังสามารถตั้งเวลาถ่ายน้ำในสวน",
       "server": "no",
-      "wiki": "http://exceed.cpe.ku.ac.th/wiki/index.php/Exceed_13_External"
+      "wiki": "http://exceed.cpe.ku.ac.th/wiki/index.php/Exceed_13_External",
+      "tags": "HTML, CSS, Javascript, jQuery"                        
     },
     {
       "name": "What The Fast",
       "github": "https://github.com/Facelespedia/speed-test",
       "description": "นี่คือโปรเจควิชา Data Comunication Skill เว็บไซต์ไว้เช็คความเร็วของอินเทอร์เน็ตแสดงผล ping, ip address, download, upload, และ server ที่ใช้เช็คด้วย",
       "server": "no",
-      "wiki": "no"
+      "wiki": "no",
+      "tags": "HTML, CSS, Javascript, jQuery"                              
     },
     {
       "name": "Facelespedia",
       "github": "https://github.com/Facelespedia/Facelespedia",
       "description": "นี่คือโปรเจคจบ วิชา Database เป็นเว็บไซต์แสดงข้อมูลสถิติต่างๆทั้ง ทีม ผู้เล่น และฮีโร่ ของเกมส์ Dota2",
       "server": "no",
-      "wiki": "no"
+      "wiki": "no",
+      "tags": "HTML, CSS, Javascript, jQuery, Node.js"                                    
     },
     {
       "name": "exceed vote frontend",
       "github": "https://github.com/exceed-vote/vote-frontend",
       "description": "เป็นหน้าเว็บไซต์ไว้สำหรับโหวดคะแนนโปรเจคของค่าย Exceed 14",
       "server": "no",
-      "wiki": "no"
+      "wiki": "no",
+      "tags": "HTML, CSS, Javascript, jQuery"                                          
     },
     {
       "name": "Medicon App (Cycle1)",
       "github": "no",
       "description": "เป็นเว็บไซต์สำหรับการให้คำปรึกษาแนะนำการรักษาสำหรับผู้ที่คิดว่ามีปัญหาต้องการปรึกษากับจิตแพทย์",
       "server": "no",
-      "wiki": "no"
+      "wiki": "no",
+      "tags": "Ruby on Rails, SASS, Slim, jQuery"                                                
     },
     {
       "name": "Getkaset (Cycle1)",
       "github": "no",
       "description": "เป็นเว็บไซต์ e-Commerce ขายสินค้าต่างๆทางการเกษตรมีส่วนของกระทู้ถาม-ตอบ บทความ และมีระบบสมาชิก ระบบซื้อขาย และส่วนของคนจัดการสินค้าต่างๆ",
       "server": "no",
-      "wiki": "no"
+      "wiki": "no",
+      "tags": "Ruby on Rails, SASS, jQuery"      
     },
     {
       "name": "Coup Web",
       "github": "https://github.com/Coupdeg/coup-web",
       "description": "เป็นโปรเจคจบวิชา Workgroup Software Development Process เป็นเว็บไซต์ e-Commerce ขายเสื้อผ้าเครื่องประดับของต่างๆผู้หญิงที่มีระบบสมาชิก ระบบซื้อขายต่างๆและส่วนของผู้ดูแลระบบ",
       "server": "http://coup-deg.herokuapp.com",
-      "wiki": "no"
+      "wiki": "no",
+      "tags": "Django, SASS, jQuery, Heroku"
     }
   ]
 }
