@@ -16,8 +16,8 @@ const Header = props => (
 	<div>
 		<Container className="row fixed-top hidden-md-down" name="navbar">
 			<Burger />
-			<Middle t={props.t}/>
-			<Change i18n={props.i18n} />
+			<Middle t={props.t} className="col-md-6"/>
+			<Change i18n={props.i18n} className="col-md-6"/>
 		</Container>
 		<Container className="hidden-lg-up">
 			<Burger />
