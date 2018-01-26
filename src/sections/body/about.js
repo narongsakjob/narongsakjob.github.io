@@ -4,8 +4,8 @@ import Profile from './information'
 import Contact from './contact'
 
 const Title = styled.div`
-	margin: 30px auto 0 auto;
-	padding-bottom: 30px;
+	margin: 30px auto 40px auto;
+	padding-bottom: 20px;
 	text-align: center;
 	border-bottom: 2px solid rgba(0,0,0,0.25);	
 	width: 75%;

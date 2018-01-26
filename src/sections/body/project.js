@@ -5,7 +5,7 @@ import Slider from 'react-slick'
 import img_projects from './data'
 
 const Title = styled.div`
-	margin: 0 auto 0 auto;
+	margin: 0 auto 70px auto;
 	padding-bottom: 30px;
 	text-align: center;
 	border-bottom: 2px solid rgba(0,0,0,0.25);	
@@ -14,7 +14,12 @@ const Title = styled.div`
 `
 
 const Container = styled.div`
-	padding: 8%;
+	padding:  0% 8% 8% 8%;
+`
+const Underline = styled.div`
+	border-bottom: 2px solid rgba(0,0,0,0.25);	
+	width: 75%;
+	margin : 70px auto 0 auto;
 `
 
 const Desc = styled.div`
@@ -112,6 +117,7 @@ export default class Project extends React.Component {
 						{ this.getData(j) }
 						{ this.getImage(j) }
 					</div>
+					<Underline />
 				</Container>
 			)
 		}
