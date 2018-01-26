@@ -20,8 +20,10 @@ const Label = styled.button`
 	padding: 5px 20px 5px 20px;
 	border-radius: 20px;
 	margin-bottom: 10px;
+	background-color: #f5f5f5;
 	&:hover {
 		cursor: pointer;
+		transform: scale(1.2);
 	}
 	&:focus {
 		outline: none;
