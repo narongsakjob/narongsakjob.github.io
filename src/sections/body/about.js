@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import Profile from './information'
+import Contact from './contact'
 
 const Title = styled.div`
 	margin: 30px auto 0 auto;
@@ -21,6 +22,9 @@ const Container = styled.div`
 `
 const Image = styled.img`
 	max-height: 300px;
+	@media only screen and (max-width: 768px) {
+		margin-bottom: 40px;
+	}
 `
 const AboutMe = styled.div`
 	align-self: center;
@@ -43,7 +47,8 @@ export default class About extends React.Component {
 		let { t } = this.props
 		return (
 			<AboutMe className="col-md-7">
-				<h1 style={{ marginBottom: "20px" }}>Software Developer</h1>
+				<h1>Narongsak Chobsri</h1>
+				<h4 style={{ marginBottom: "20px" }}>Software Developer</h4>
 				<p>{ t('about.title') }</p>
 			</AboutMe>
 		)
@@ -60,6 +65,8 @@ export default class About extends React.Component {
 				</div>
 				<Title>Information</Title>
 				<Profile t={t} />
+				<Title>Contact</Title>
+				<Contact t={t}/>
 			</Container>
 		)
 	}

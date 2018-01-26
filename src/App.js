@@ -18,7 +18,7 @@ class App extends Component {
       <div id="App">
         <Header t={t} i18n={i18n} />
         <Body t={t} />
-        <Footer t={t} />
+        {/* <Footer t={t} /> */}
       </div>
     )
   }

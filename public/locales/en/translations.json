@@ -2,6 +2,7 @@
   "title": "Welcome",
   "about": {
     "title": "Hi, My name's Job. I'm a programmer student interested in web-development and i love to learn new thing",
+    "address": "196 soi samukkee34 thasai mhuang nonthaburi 11000 thailand",
     "first_name": {
       "label": "Name",
       "value": "Narongsak"
