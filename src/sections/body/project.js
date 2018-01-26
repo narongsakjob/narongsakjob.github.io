@@ -81,6 +81,9 @@ export default class Project extends React.Component {
 					<h2>{ t(`projects.${index}.name`) }</h2>
 					<p>{ t(`projects.${index}.description`) }.</p>
 				</Head>
+				<h5 className="text-center">
+					<i className="fa fa-tags" aria-hidden="true"> { t(`projects.${index}.tags`) }</i>
+				</h5>
 				<div className="text-center">
 					{ t(`projects.${index}.github`) === 'no' ? get_private() : get_github(index) }
 					{ t(`projects.${index}.wiki`) === 'no' ? "" : get_wiki(index) }
