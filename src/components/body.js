@@ -5,7 +5,7 @@ import About from '../sections/body/about'
 import Project from '../sections/body/project'
 
 const Container = styled.div`
-	background-color: #f3f3f3;  
+	background-color:	#ffffff;
 `
 
 export default class Body extends React.Component {

@@ -102,7 +102,7 @@ export default class Project extends React.Component {
 		let size = 11
 		for (let j = 0; j < size ; j++) {
 			table.push(
-				<Container style={{ backgroundColor: `${ j%2===0 ? '#fff': '#f3f3f3'}` }} key={j}>
+				<Container key={j}>
 					<div className="row hidden-md-down">
 						{ j%2 === 0 ? this.getData(j) : this.getImage(j) }
 						<div className="col-md-1" style={ {zIndex: '-1'} } ></div>
@@ -120,7 +120,7 @@ export default class Project extends React.Component {
 
 	render() {
 		return (
-			<div style={{backgroundColor: "#fff", paddingTop: "20px"}}>
+			<div>
 				<Title>Projects</Title>
 				{ this.getTable() }
 			</div>
