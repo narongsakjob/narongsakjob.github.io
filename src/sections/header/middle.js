@@ -12,11 +12,15 @@ const Title = styled.div`
 `
 
 export default class Middle extends React.Component {
+	
+	listenScrollEvent() {
+    console.log('Scroll event detected!');
+	}
 
 	render() {
 		let { t } = this.props
 		return(
-			<Container>
+			<Container onScroll={this.listenScrollEvent}>
 				<Title>{ t('title.welcome') }</Title>
 			</Container>
 		)

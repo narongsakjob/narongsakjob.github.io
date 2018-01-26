@@ -41,10 +41,10 @@ class Burger extends Component {
   render () {
     return (
 			<Menu left styles={ styles }>
-				<Link to="about" spy={true} smooth={true} duration={500} offset={-50} className="menu-item" href="#">About</Link>
-				<Link to="profile" spy={true} smooth={true} duration={500} offset={-50} className="menu-item" href="#">Information</Link>
-				<Link to="contact" spy={true} smooth={true} duration={500} offset={-50} className="menu-item" href="#">Contact</Link>
-				<Link to="project" spy={true} smooth={true} duration={500} offset={-50} className="menu-item" href="#">Projects</Link>        
+				<Link to="about" spy={true} smooth={true} duration={500} offset={-50}  className="menu-item" >About</Link>
+				<Link to="profile" spy={true} smooth={true} duration={500} offset={-50} className="menu-item" >Information</Link>
+				<Link to="contact" spy={true} smooth={true} duration={500} offset={-50} className="menu-item" >Contact</Link>
+				<Link to="project" spy={true} smooth={true} duration={500} offset={-50} className="menu-item" >Projects</Link>        
 			</Menu>
     );
   }

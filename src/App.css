@@ -21,11 +21,12 @@ html {
   color: #f5f5f5;
 }
 .menu-item {
-  color: #FEFEFE;
+  color: #FEFEFE !important;
   text-align: center;
   text-decoration: none !important;
 }
 .menu-item:hover {
   transform: scale(1.4);
   color: #FEFEFE;
+  cursor: pointer;
 }

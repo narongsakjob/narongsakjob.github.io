@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import Slider from 'react-slick'
+import { Element } from 'react-scroll';
 
 import img_projects from './data'
 
@@ -140,10 +141,10 @@ export default class Project extends React.Component {
 	render() {
 		let {t} = this.props
 		return (
-			<div>
+			<Element name="project">
 				<Title><i className="fa fa-th" aria-hidden="true"></i> { t('title.project') }</Title>
 				{ this.getTable() }
-			</div>
+			</Element>
 		)
 	}
 }
