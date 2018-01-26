@@ -16,24 +16,27 @@ export default class Middle extends React.Component {
 	
 	constructor(props) {
 		super(props);
+		let { t } = this.props
 		this.handleScrollCallback = this.handleScrollCallback.bind(this);
+		this.state = { show: t('title.welcome') }
 	}
 
 	handleScrollCallback() {
+		let { t } = this.props
 		let about = document.getElementsByName("about")[0]
 		let profile = document.getElementsByName("profile")[0]				
 		let contact = document.getElementsByName("contact")[0]		
 		let project = document.getElementsByName("project")[0]
 		if( project.getBoundingClientRect().top < 60 ) {
-			console.log("project")
+			this.setState({ show: t('title.project') })
 		}else if(contact.getBoundingClientRect().top < 60) {
-			console.log("contact")
+			this.setState({ show: t('title.contact') })
 		}else if(profile.getBoundingClientRect().top < 60) {
-			console.log("profile")
+			this.setState({ show: t('title.information') })
 		}else if(about.getBoundingClientRect().top < 60) {
-			console.log("about")
+			this.setState({ show: t('title.about') })
 		}else {
-			console.log("welcom")
+			this.setState({ show: t('title.welcome') })
 		}
 	}
 	listenScrollEvent() {
@@ -45,7 +48,7 @@ export default class Middle extends React.Component {
 		return(
 			<Container onScroll={this.listenScrollEvent}>
 				<ScrollEvent handleScrollCallback={this.handleScrollCallback} />
-				<Title>{ t('title.welcome') }</Title>
+				<Title>{ this.state.show }</Title>
 			</Container>
 		)
 	}
