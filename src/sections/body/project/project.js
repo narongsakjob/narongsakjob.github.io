@@ -46,7 +46,7 @@ export default class Project extends React.Component {
 						<Data index={j} t={t} />
 						<Image index={j}/>
 					</div>
-					<Underline />
+					{ j < size-1 ? <Underline /> : ''}
 				</Container>
 			)
 		}
