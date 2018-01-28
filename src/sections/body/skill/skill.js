@@ -20,9 +20,9 @@ const get_data = () => (
 		<div className="row" key={key} style={{ marginBottom: "20px" }} >
 			{ console.log(object.name) }
 			<div className="col-md-3"/>
-			<div className="col-md-3">
+			<h5 className="col-md-3">
 				<Image src={ require(`../../../assets/images/skill/${object.image}.png`) } className="img-fluid"/> {object.name}
-			</div>
+			</h5>
 			<div className="col-md-5">
 				<div>{object.framework}</div>
 				<div className="progress" style={{ padding: "0px" }}>
