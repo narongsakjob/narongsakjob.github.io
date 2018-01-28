@@ -5,7 +5,7 @@ import Title from '../_shared/title'
 
 const skills = ({t}) => (
 	<Element className="container text-center" name="skill">
-		<Title menu="project" t={t} icon="th"/>
+		<Title menu="skill" t={t} icon="star"/>
 	</Element>
 )
 
