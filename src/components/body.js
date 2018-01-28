@@ -16,7 +16,7 @@ export default class Body extends React.Component {
 			<Container>
         <About t={t} />
 				<Project t={t} />
-				<Skill />
+				<Skill t={t}/>
 			</Container>
 		)
 	}
