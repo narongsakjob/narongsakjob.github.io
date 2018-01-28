@@ -59,7 +59,7 @@ export default class About extends React.Component {
 	
 	render() {
 		let { t } = this.props
-		let image_url = require("../../assets/images/me.jpg")
+		let image_url = require("../../../assets/images/me.jpg")
 		return (
 			<Container className="container">
 				<Element name="about">
