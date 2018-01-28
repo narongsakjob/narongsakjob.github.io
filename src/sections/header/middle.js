@@ -27,7 +27,11 @@ export default class Middle extends React.Component {
 		let profile = document.getElementsByName("profile")[0]				
 		let contact = document.getElementsByName("contact")[0]		
 		let project = document.getElementsByName("project")[0]
-		if( project.getBoundingClientRect().top < 60 ) {
+		let skill = document.getElementsByName("skill")[0]
+
+		if(skill.getBoundingClientRect().top < 150) {
+			this.setState({ show: t('title.skill') })
+		}else if( project.getBoundingClientRect().top < 60 ) {
 			this.setState({ show: t('title.project') })
 		}else if(contact.getBoundingClientRect().top < 60) {
 			this.setState({ show: t('title.contact') })
@@ -39,13 +43,10 @@ export default class Middle extends React.Component {
 			this.setState({ show: t('title.welcome') })
 		}
 	}
-	listenScrollEvent() {
-    console.log('Scroll event detected!');
-	}
 
 	render() {
 		return(
-			<Container onScroll={this.listenScrollEvent}>
+			<Container>
 				<ScrollEvent handleScrollCallback={this.handleScrollCallback} />
 				<Title>{ this.state.show }</Title>
 			</Container>
