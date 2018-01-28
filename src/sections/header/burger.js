@@ -44,7 +44,8 @@ class Burger extends Component {
 				<Link to="about" spy={true} smooth={true} duration={500} offset={-50}  className="menu-item" >About</Link>
 				<Link to="profile" spy={true} smooth={true} duration={500} offset={-50} className="menu-item" >Information</Link>
 				<Link to="contact" spy={true} smooth={true} duration={500} offset={-50} className="menu-item" >Contact</Link>
-				<Link to="project" spy={true} smooth={true} duration={500} offset={-50} className="menu-item" >Projects</Link>        
+				<Link to="project" spy={true} smooth={true} duration={500} offset={-50} className="menu-item" >Projects</Link>   
+				<Link to="skill" spy={true} smooth={true} duration={500} offset={-50} className="menu-item" >Skills</Link>                     
 			</Menu>
     );
   }

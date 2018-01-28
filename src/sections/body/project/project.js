@@ -4,16 +4,7 @@ import { Element } from 'react-scroll';
 
 import Image from './images'
 import Data from './data'
-
-const Title = styled.div`
-	margin: 0 auto 70px auto;
-	padding-bottom: 30px;
-	text-align: center;
-	border-bottom: 2px solid rgba(0,0,0,0.25);	
-	width: 75%;
-	font-size: 40px;
-	color: #B5AD6A;
-`
+import Title from '../_shared/title'
 
 const Container = styled.div`
 	padding:  0% 8% 8% 8%;
@@ -57,7 +48,7 @@ export default class Project extends React.Component {
 		let {t} = this.props
 		return (
 			<Element name="project">
-				<Title><i className="fa fa-th" aria-hidden="true"></i> { t('title.project') }</Title>
+				<Title t={t} menu="project" icon="th" />
 				{ this.getTable() }
 			</Element>
 		)

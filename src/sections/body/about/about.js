@@ -1,18 +1,10 @@
 import React from 'react'
 import styled from 'styled-components'
 import { Element } from 'react-scroll';
+
 import Profile from './information'
 import Contact from './contact'
-
-const Title = styled.div`
-	margin: 30px auto 40px auto;
-	padding-bottom: 20px;
-	text-align: center;
-	border-bottom: 2px solid rgba(0,0,0,0.25);	
-	width: 75%;
-	font-size: 40px;
-	color: #B5AD6A;
-`
+import Title from '../_shared/title'
 
 const Container = styled.div`
 	padding: 8%;
@@ -37,7 +29,6 @@ const AboutMe = styled.div`
 	padding: 20px;
 	color: #FFF;
 `
-
 
 export default class About extends React.Component {
 
@@ -68,12 +59,14 @@ export default class About extends React.Component {
 						{this.About()}
 					</div>
 				</Element>
-				<Element name="profile">				
-					<Title><i className="fa fa-user-circle" aria-hidden="true"></i> { t('title.information') }</Title>
+				<Element name="profile">
+					<div style={{marginTop: '50px'}}/>			
+					<Title icon="user-circle" t={t} menu="information"  />			
 					<Profile t={t} />
 				</Element>
-				<Element name="contact">				
-					<Title><i className="fa fa-address-book" aria-hidden="true"></i> { t('title.contact') }</Title>
+				<Element name="contact">		
+					<div style={{marginTop: '80px'}}/>							
+					<Title icon="address-book" t={t} menu="contact" style={{ marginTop: "40px" }} />							
 					<Contact t={t}/>
 				</Element>
 			</Container>

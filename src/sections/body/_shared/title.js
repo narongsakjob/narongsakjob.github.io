@@ -1,8 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
-import { Element } from 'react-scroll' 
 
-const Title = styled.div`
+const Text = styled.div`
 	margin: 0 auto 70px auto;
 	padding-bottom: 30px;
 	text-align: center;
@@ -12,10 +11,8 @@ const Title = styled.div`
 	color: #B5AD6A;
 `
 
-const skills = () => (
-	<Element className="container text-center" name="skill">
-		<Title> Skills </Title>
-	</Element>
+const Title = ({menu, icon, t}) => (
+	<Text><i className={`fa fa-${icon}`} aria-hidden="true"></i> { t(`title.${menu}`) }</Text>
 )
 
-export default skills
+export default Title
