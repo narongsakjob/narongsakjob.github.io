@@ -1,8 +1,8 @@
 {
   "main.css": "static/css/main.85c35a23.css",
   "main.css.map": "static/css/main.85c35a23.css.map",
-  "main.js": "static/js/main.25b1683d.js",
-  "main.js.map": "static/js/main.25b1683d.js.map",
+  "main.js": "static/js/main.1e318b55.js",
+  "main.js.map": "static/js/main.1e318b55.js.map",
   "static/media/coup_1.png": "static/media/coup_1.50c532de.png",
   "static/media/coup_2.png": "static/media/coup_2.9fcc52bd.png",
   "static/media/coup_3.png": "static/media/coup_3.3de52bd1.png",
@@ -28,6 +28,7 @@
   "static/media/pokemon_1.png": "static/media/pokemon_1.b426a8fc.png",
   "static/media/pokemon_2.png": "static/media/pokemon_2.cb497d81.png",
   "static/media/pokemon_3.png": "static/media/pokemon_3.1301cdd6.png",
+  "static/media/ruby.png": "static/media/ruby.41cd17c5.png",
   "static/media/shoot_ghost_1.png": "static/media/shoot_ghost_1.0fba118f.png",
   "static/media/shoot_ghost_2.png": "static/media/shoot_ghost_2.f98c4ce5.png",
   "static/media/shoot_ghost_3.png": "static/media/shoot_ghost_3.34c258cb.png",
