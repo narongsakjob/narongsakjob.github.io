@@ -41,6 +41,12 @@ const data = [
 		"percent": "30",
 		"framework": "iOS"
 	},
+	{
+		"name": "C/C++",
+		"image": "c",
+		"percent": "35",
+		"framework": "Data Structure"
+	}
 ]
 
 export default data

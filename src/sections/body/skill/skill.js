@@ -18,7 +18,6 @@ const Image = styled.img`
 const get_data = () => (
 	data.map( (object, key) =>  
 		<div className="row" key={key} style={{ marginBottom: "20px" }} >
-			{ console.log(object.name) }
 			<div className="col-md-3"/>
 			<h5 className="col-md-3">
 				<Image src={ require(`../../../assets/images/skill/${object.image}.png`) } className="img-fluid"/> {object.name}
