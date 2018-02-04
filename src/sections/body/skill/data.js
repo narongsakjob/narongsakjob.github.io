@@ -2,14 +2,14 @@ const data = [
 	{
 		"name": "Ruby",
 		"image": "ruby",
-		"percent": "60",
+		"percent": "55",
 		"framework": "Ruby on Rails",
 		"color": "#D62D20" 		
 	},
 	{
 		"name": "Python",
 		"image": "python",
-		"percent": "55",
+		"percent": "50",
 		"framework": "Django",
 		"color": "#6897BB"	
 	},
